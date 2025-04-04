@@ -40,4 +40,4 @@ False Question:
 
 🚀 Demo
 
-Link: https://lqduygit.github.io/to-do-list-app/
+Link: https://lqduygit.github.io/quizappbasic/
