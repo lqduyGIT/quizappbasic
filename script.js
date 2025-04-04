@@ -177,7 +177,7 @@ function selectAnswer(e) {
 function showScore() {
   //Xóa nội dung cũ.
   resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  questionElement.innerHTML = `Your scored ${score} out of ${questions.length}!`;
   //Đổi nội dung nút thành “Play Again” để làm lại.
   nextButton.innerHTML = "Play Again";
   // /Hiển thị nút để người dùng bấm chơi lại
