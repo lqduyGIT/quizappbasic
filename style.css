@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #00465d;
+}
+
+.quiz__app {
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.quiz__app--title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.quiz__app--title img {
+  width: 8%;
+  height: auto;
+}
+
+.quiz__app--title h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+}
+
+.quiz__app--quiz {
+  padding: 20px 0;
+}
+
+.quiz__app--quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+  text-align: justify; /* Căn đều hai bên */
+}
+
+#answer__buttons .btn {
+  background-color: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#answer__buttons .btn:hover:not([disabled]) {
+  background-color: #222;
+  color: #fff;
+}
+#answer__buttons .btn:disabled {
+  cursor: no-drop;
+}
+#next-btn {
+  background-color: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+#answer__buttons .correct {
+  background-color: #9aeabc;
+}
+
+#answer__buttons .incorrect {
+  background-color: #ff9393;
+}
+
+/* Responsive for tablet and mobile ( 768px ) */
+
+@media (max-width: 768px) {
+  .quiz__app {
+    padding: 20px;
+    margin: 50px 10px 0;
+  }
+
+  .quiz__app--title h1 {
+    font-size: 20px;
+  }
+
+  .quiz__app--title img {
+    width: 12%;
+  }
+
+  .quiz__app--quiz h2 {
+    font-size: 16px;
+  }
+
+  #answer__buttons .btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #next-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
